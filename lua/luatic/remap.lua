@@ -1,5 +1,7 @@
--- View project files
+-- Set leader
 vim.g.mapleader = " "
+
+-- View project files
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Move selected text in visual mode

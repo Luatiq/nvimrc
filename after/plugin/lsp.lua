@@ -15,9 +15,10 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'phpactor', 'eslint', 'vuels', 'lua_ls', 'sqls', 'marksman' },
+	ensure_installed = { 'phpactor', 'eslint', 'vuels', 'lua_ls', 'sqls', 'marksman', 'bashls' },
 	handlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
