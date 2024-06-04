@@ -36,4 +36,11 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use {
+      "nvimdev/guard.nvim",
+      requires = {
+          "nvimdev/guard-collection",
+      },
+  }
+
 end)
