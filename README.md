@@ -8,3 +8,4 @@ My first nvim setup, inspired by Prime
 - Go
 - Node
 - PHP
+- ccls

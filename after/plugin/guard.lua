@@ -13,3 +13,8 @@ require('guard').setup({
     -- You can disable this by setting:
     -- save_on_fmt = false,
 })
+
+local gfmt = require('guard.format')
+vim.keymap.set("n", "<leader>f", function() gfmt.do_fmt() end)
+--vim.keymap.set("v", "<leader>f", function() gfmt.do_fmt() end, { buffer = true })
+--vim.keymap.set("v", "<leader>f", function() gfmt.do_fmt() '<esc>' end, { buffer = true })

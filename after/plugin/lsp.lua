@@ -18,7 +18,7 @@ end)
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'phpactor', 'eslint', 'vuels', 'lua_ls', 'sqls', 'marksman', 'bashls', 'html', 'cssls', 'rust_analyzer' },
+	ensure_installed = { 'phpactor', 'eslint', 'volar', 'lua_ls', 'sqls', 'marksman', 'bashls', 'html', 'cssls', 'rust_analyzer' },
 	handlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
@@ -36,6 +36,18 @@ require('mason-lspconfig').setup({
 		end
 	},
 })
+
+require('lspconfig').volar.setup {
+    filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
+}
+
+require('lspconfig').ccls.setup {
+  init_options = {
+    cache = {
+      directory = ".ccls-cache";
+    };
+  }
+}
 
 local cmp = require('cmp')
 cmp.setup({
