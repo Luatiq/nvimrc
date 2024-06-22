@@ -15,18 +15,22 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = { 'phpactor', 'eslint', 'volar', 'lua_ls', 'sqls', 'marksman', 'bashls', 'html', 'cssls', 'rust_analyzer' },
 	handlers = {
 		function(server_name)
-			require('lspconfig')[server_name].setup({})
+			require('lspconfig')[server_name].setup({
+                capabilities = lsp_capabilities,
+            })
 		end,
 
 		phpactor = function()
 			require('lspconfig').phpactor.setup{
-				on_attach = on_attach,
+				on_attach = lsp_zero.on_attach,
 				init_options = {
 					["language_server_phpstan.enabled"] = true,
 					["language_server_php_cs_fixer.enabled"] = true,
@@ -50,6 +54,7 @@ require('lspconfig').ccls.setup {
 }
 
 local cmp = require('cmp')
+local cmp_select = {behavior = cmp.SelectBehavior.Select}
 cmp.setup({
 	mapping = cmp.mapping.preset.insert({
 		['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
