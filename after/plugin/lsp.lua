@@ -51,6 +51,8 @@ require('lspconfig').ccls.setup {
   }
 }
 
+require('lspconfig').twiggy_language_server.setup{}
+
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 cmp.setup({

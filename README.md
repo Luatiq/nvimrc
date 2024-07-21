@@ -1,5 +1,4 @@
 # My Neovim setup
-My first nvim setup, inspired by Prime
 
 ## Prerequisites
 - Neovim >=0.9
@@ -8,3 +7,4 @@ My first nvim setup, inspired by Prime
 - Node
 - PHP
 - ccls
+- twiggy_language_server
