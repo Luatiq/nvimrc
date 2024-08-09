@@ -9,6 +9,7 @@ return {
         'hrsh7th/cmp-path',
         'thomas-hiron/cmp-twig',
         'thomas-hiron/cmp-twig-constants',
+        'thomas-hiron/cmp-symfony-routes',
     },
     config = function()
         local cmp = require('cmp')
@@ -36,6 +37,7 @@ return {
                 { name = 'luasnip' },
                 { name = 'twig' },
                 { name = 'twig_constants' },
+                { name = 'symfony_routes' },
             }, {
                     { name = 'buffer' },
                 })

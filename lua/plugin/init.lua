@@ -1,5 +1,7 @@
 return {
     'tpope/vim-fugitive',
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
