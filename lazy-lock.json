@@ -8,6 +8,7 @@
   "cmp-twig": { "branch": "main", "commit": "1398ce32764a7c6d3b33873e03c00e694f7df988" },
   "cmp-twig-constants": { "branch": "main", "commit": "383d895e73d12ac16312901e7b433a30da4a0bf0" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
+  "flash.nvim": { "branch": "main", "commit": "34c7be146a91fec3555c33fe89c7d643f6ef5cf1" },
   "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "lazydev.nvim": { "branch": "main", "commit": "491452cf1ca6f029e90ad0d0368848fac717c6d2" },

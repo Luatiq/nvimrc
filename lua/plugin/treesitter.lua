@@ -18,6 +18,14 @@ return {
                 'sql',
                 'markdown',
                 'rust',
+                'yaml',
+                'regex',
+                'markdown',
+                'markdown_inline',
+                'json',
+                'diff',
+                'c',
+                'bash',
                 'lua',
                 'luadoc',
                 'vim',
@@ -28,7 +36,7 @@ return {
                 enable = true,
                 additional_vim_regex_highlighting = true,
             },
-            indent = { enable = true },  
+            indent = { enable = true },
         })
     end
 }
