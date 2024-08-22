@@ -336,5 +336,9 @@ return {
             filetypes = { "css", "html", "javascript", "sass", "scss", "twig" },
             capabilities = capabilities
         }
+
+        require('lspconfig').gdscript.setup {
+            on_attach = on_attach
+        }
     end
 }

@@ -30,6 +30,8 @@ return {
                 'luadoc',
                 'vim',
                 'vimdoc',
+                'c_sharp',
+                'gdscript',
             },
             sync_install = false,
             highlight = {
