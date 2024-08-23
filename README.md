@@ -8,10 +8,10 @@ second iteration, redone from scratch - always improving
 - PHP
 
 ## Language servers
-- ```sh
+```sh
 npm install -g @olrtg/emmet-language-server
 ```
-- ```sh
+```sh
 npm install -g intelephense
 ```
 - [lua-language-server](https://luals.github.io/#neovim-install)
