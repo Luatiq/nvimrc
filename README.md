@@ -14,4 +14,7 @@ npm install -g @olrtg/emmet-language-server
 ```sh
 npm install -g intelephense
 ```
+```sh
+npm i -g bash-language-server
+```
 - [lua-language-server](https://luals.github.io/#neovim-install)
