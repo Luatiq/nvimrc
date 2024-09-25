@@ -38,6 +38,7 @@ return {
                 { name = 'twig' },
                 { name = 'twig_constants' },
                 { name = 'symfony_routes' },
+                { name = 'quickgd' },
             }, {
                     { name = 'buffer' },
                 })

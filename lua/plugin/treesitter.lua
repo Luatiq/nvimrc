@@ -32,6 +32,7 @@ return {
                 'vimdoc',
                 'c_sharp',
                 'gdscript',
+                'glsl',
             },
             sync_install = false,
             highlight = {
