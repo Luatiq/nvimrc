@@ -366,5 +366,7 @@ return {
         require('lspconfig').gdscript.setup {
             on_attach = on_attach
         }
+
+        require('lspconfig').csharp_ls.setup{}
     end
 }
