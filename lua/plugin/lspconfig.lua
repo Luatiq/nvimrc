@@ -367,6 +367,8 @@ return {
             on_attach = on_attach
         }
 
-        require('lspconfig').csharp_ls.setup{}
+        require('lspconfig').csharp_ls.setup{
+            on_attach = on_attach,
+        }
     end
 }

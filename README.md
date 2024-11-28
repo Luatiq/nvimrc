@@ -17,4 +17,7 @@ npm install -g intelephense
 ```sh
 npm i -g bash-language-server
 ```
+```sh
+dotnet tool install --global csharp-ls
+```
 - [lua-language-server](https://luals.github.io/#neovim-install)
